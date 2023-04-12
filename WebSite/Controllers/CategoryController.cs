@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebSite.Data;
 using WebSite.Models;
@@ -14,11 +17,13 @@ namespace WebSite.Controllers
             _db = db;
         }
 
+
         public IActionResult Index()
         {
             IEnumerable<Category> objList = _db.Category;
             return View(objList);
         }
+
 
         //GET - CREATE
         public IActionResult Create()
@@ -26,34 +31,37 @@ namespace WebSite.Controllers
             return View();
         }
 
+
         //POST - CREATE
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category obj)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _db.Category.Add(obj);
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(obj);
+
         }
 
-        //Get - Edit
-        public IActionResult Edit(int id)
+
+        //GET - EDIT
+        public IActionResult Edit(int? id)
         {
-            if(id==null || id ==0)
+            if (id == null || id == 0)
             {
                 return NotFound();
             }
             var obj = _db.Category.Find(id);
-            if(obj == null)
+            if (obj == null)
             {
                 return NotFound();
             }
 
-            return View();
+            return View(obj);
         }
 
         //POST - EDIT
@@ -68,9 +76,10 @@ namespace WebSite.Controllers
                 return RedirectToAction("Index");
             }
             return View(obj);
+
         }
 
-        //Get - Delete
+        //GET - DELETE
         public IActionResult Delete(int? id)
         {
             if (id == null || id == 0)
@@ -83,10 +92,10 @@ namespace WebSite.Controllers
                 return NotFound();
             }
 
-            return View();
+            return View(obj);
         }
 
-        //POST - Delete
+        //POST - DELETE
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeletePost(int? id)
@@ -96,10 +105,12 @@ namespace WebSite.Controllers
             {
                 return NotFound();
             }
-
             _db.Category.Remove(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");
+
+
         }
+
     }
 }

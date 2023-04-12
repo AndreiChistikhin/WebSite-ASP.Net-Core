@@ -1,9 +1,9 @@
-﻿
-@model WebSite.Models.Category
+﻿@model WebSite.Models.Category
 
 <form method="post" asp-action="DeletePost">
     <input asp-for="Id" hidden />
     <div class="border p-3">
+
         <div class="form-group row">
             <h2 class="text-info pl-3">Delete Category</h2>
         </div>
@@ -34,9 +34,7 @@
                             <input type="submit" class="btn btn-danger w-100" value="Delete" />
                         </div>
                         <div class="col">
-                            <a asp-action="Index" class="btn btn-success w-100">
-                                Back
-                            </a>
+                            <a asp-action="Index" class="btn btn-success w-100"><i class="fas fa-sign-out-alt"></i> Back</a>
                         </div>
                     </div>
                 </div>
@@ -50,10 +48,9 @@
 </form>
 
 @section Scripts{
+
     @{
         <partial name="_ValidationScriptsPartial" />
     }
+
 }
-
-
-

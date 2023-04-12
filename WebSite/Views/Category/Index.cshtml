@@ -1,6 +1,5 @@
 ﻿@model IEnumerable<WebSite.Models.Category>
 
-
 <div class="container p-3">
     <div class="row pt-4">
         <div class="col-6">
@@ -16,7 +15,7 @@
     <br /><br />
 
     @if (Model.Count() > 0)
-     { 
+    {
         <table class="table table-bordered table-striped" style="width:100%">
             <thead>
                 <tr>
@@ -30,7 +29,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach(var obj in Model)
+                @foreach (var obj in Model)
                 {
                     <tr>
                         <td width="50%">@obj.RealName</td>
@@ -49,8 +48,11 @@
                 }
             </tbody>
         </table>
-     }
-     else
-     {
+    }
+    else
+    {
         <p> No category exists.</p>
-     }
+    }
+
+</div>
+
