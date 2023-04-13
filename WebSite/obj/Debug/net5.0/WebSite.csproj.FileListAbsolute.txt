@@ -299,3 +299,8 @@ C:\programming\LearningProjects\WebSite\WebSite\obj\Debug\net5.0\Razor\Views\Pro
 C:\programming\LearningProjects\WebSite\WebSite\obj\Debug\net5.0\Razor\Views\Product\Delete.cshtml.g.cs
 C:\programming\LearningProjects\WebSite\WebSite\obj\Debug\net5.0\Razor\Views\Shared\_IndividualProductCard.cshtml.g.cs
 C:\programming\LearningProjects\WebSite\WebSite\obj\Debug\net5.0\Razor\Views\Home\Details.cshtml.g.cs
+C:\programming\LearningProjects\WebSite\WebSite\bin\Debug\net5.0\WebSite.StaticWebAssets.xml
+C:\programming\LearningProjects\WebSite\WebSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\programming\LearningProjects\WebSite\WebSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\programming\LearningProjects\WebSite\WebSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\programming\LearningProjects\WebSite\WebSite\obj\Debug\net5.0\WebSite.MvcApplicationPartsAssemblyInfo.cs
