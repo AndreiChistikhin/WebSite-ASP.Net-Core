@@ -304,3 +304,5 @@ C:\programming\LearningProjects\WebSite\WebSite\bin\Debug\net5.0\Microsoft.AspNe
 C:\programming\LearningProjects\WebSite\WebSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
 C:\programming\LearningProjects\WebSite\WebSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\programming\LearningProjects\WebSite\WebSite\obj\Debug\net5.0\WebSite.MvcApplicationPartsAssemblyInfo.cs
+C:\programming\LearningProjects\WebSite\WebSite\obj\Debug\net5.0\Razor\Views\Cart\Index.cshtml.g.cs
+C:\programming\LearningProjects\WebSite\WebSite\obj\Debug\net5.0\Razor\Views\Cart\Summary.cshtml.g.cs
